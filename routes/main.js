@@ -7,14 +7,7 @@ router.get('/docs', (req, res) => {
     res.sendFile(__path + '/index.html')
 })
 router.get('/', (req, res) => {
-    res.sendFile(__path + '/views/index.html')
-})
-router.get('/api/game', (req, res) => {
-    res.sendFile(__path + '/views/game.html')
-})
-
-router.get('/about', (req, res) => {
-    res.sendFile(__path + '/views/about.html')
+    res.sendFile(__path + '/index.html')
 })
 
 module.exports = router
